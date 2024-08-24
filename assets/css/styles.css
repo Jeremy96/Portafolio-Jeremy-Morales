@@ -18,7 +18,76 @@
     color: #0ef;
 }
 .inicio{
-    background-color: #fff;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(../img/presentacion-home.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
+}
+.container-inicio {
+    max-width: 600px;
+}
+.container-inicio h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.container-inicio h3:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+.container-inicio h3 span {
+    color: #0ef;
+
+}
+.container-inicio h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+.container-inicio p {
+    font-size: 20px;
+}
+.redes{
+    display: inline-flex;
+    justify-content: center;
+    background-color: transparent; 
+    padding: 10px 0; 
+}
+.icon {
+    margin: 0 15px;
+}
+.icon img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s; 
+}
+.icon:hover img {
+    transform: scale(1.2);
+}
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    animation: slideTop 1s ease forwards ;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+}
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
 }
 .sobre-mi{
     background-color: #051129;
