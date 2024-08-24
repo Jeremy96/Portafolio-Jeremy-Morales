@@ -1,0 +1,18 @@
+.navbar{
+    background-color: #051129;
+}
+#container-nav{
+    justify-content: center;
+}
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.nav a:hover {
+    color: #0ef;
+}
