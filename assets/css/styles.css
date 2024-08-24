@@ -14,5 +14,21 @@
     transition: .3s;
 }
 .nav a:hover {
+    
     color: #0ef;
+}
+.inicio{
+    background-color: #fff;
+}
+.sobre-mi{
+    background-color: #051129;
+}
+.habilidades{
+    background-color: #fff;
+}
+.proyectos{
+    background-color: #051129;
+}
+.contacto{
+    background-color: #fff;
 }
