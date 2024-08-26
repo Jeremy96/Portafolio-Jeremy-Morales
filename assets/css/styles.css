@@ -130,4 +130,84 @@
 }
 .contacto{
     background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.contacto-texto{
+    position: relative;
+    padding-left: 8%;
+}
+.contacto-texto h2{
+    color: #0ef;
+    font-size: 60px;
+    text-align: center;
+}
+.contacto-texto h4{
+    font-size: 29px;
+    font-weight: 600;
+    color:#051129;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.contacto-texto p{
+    color:#051129;
+    font-size: 20px;
+    line-height: 1.4;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    margin-bottom: 4rem;
+}
+.contacto-form form{
+    position: relative;
+}
+.contacto-form form input,
+form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background:#081b29;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.contacto-form textarea{
+    resize: none;
+    height: 220px;
+}
+.contacto-form form .send{
+    display: inline-block;
+    padding: 14px 60px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #081b29;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 30px;
+    animation: slideTop 1s ease forwards ;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+}
+.contacto-form form .send:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+.footer p{
+    text-align: center;
+    background-color: #051129;
+    color: #fff;
+    width: 100%;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 70px;
 }
