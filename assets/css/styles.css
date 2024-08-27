@@ -1,9 +1,20 @@
-.navbar{
+/*Estilos Sección navbar*/
+.navbar {
     background-color: #051129;
 }
-#container-nav{
+
+#navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+#container-nav {
     justify-content: center;
 }
+
 .navbar a {
     display: inline-block;
     font-size: 25px;
@@ -13,11 +24,14 @@
     margin-left: 35px;
     transition: .3s;
 }
+
 .nav a:hover {
-    
+
     color: #0ef;
 }
-.inicio{
+
+/*Estilos Sección inicio*/
+.inicio {
     position: relative;
     width: 100%;
     justify-content: space-between;
@@ -30,45 +44,56 @@
     padding: 70px 10% 0;
 
 }
+
 .container-inicio {
     max-width: 600px;
 }
+
 .container-inicio h3 {
     font-size: 32px;
     font-weight: 700;
 }
+
 .container-inicio h3:nth-of-type(2) {
     margin-bottom: 30px;
 }
+
 .container-inicio h3 span {
     color: #0ef;
 
 }
+
 .container-inicio h1 {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
 }
+
 .container-inicio p {
     font-size: 20px;
 }
-.redes{
+
+.redes {
     display: inline-flex;
     justify-content: center;
-    background-color: transparent; 
-    padding: 10px 0; 
+    background-color: transparent;
+    padding: 10px 0;
 }
+
 .icon {
     margin: 0 15px;
 }
+
 .icon img {
     width: 40px;
     height: auto;
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
 }
+
 .icon:hover img {
     transform: scale(1.2);
 }
+
 .btn-box {
     display: inline-block;
     padding: 12px 28px;
@@ -79,42 +104,49 @@
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
-    animation: slideTop 1s ease forwards ;
+    animation: slideTop 1s ease forwards;
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef;
+        0 0 25px #0ef;
 }
+
 .btn-box:hover {
     box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 200px cyan;
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan;
 }
-.sobre-mi{
+
+/*Estilos Sección sobre mi*/
+.sobre-mi {
     background-color: #051129;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
 }
-.sobre-mi-img img{
+
+.sobre-mi-img img {
     padding-left: 10%;
     max-width: 700px;
     height: auto;
     width: 100%;
 }
-.container-sobre-mi h2{
+
+.container-sobre-mi h2 {
     color: #0ef;
     font-size: 60px;
     padding-top: 10%;
 }
-.container-sobre-mi h4{
+
+.container-sobre-mi h4 {
     font-size: 29px;
     font-weight: 600;
     color: #fff;
     line-height: 1.7;
     margin: 15px 0 30px;
 }
-.container-sobre-mi p{
+
+.container-sobre-mi p {
     color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
@@ -122,60 +154,72 @@
     padding-bottom: 10%;
     margin-bottom: 4rem;
 }
-.habilidades{
+
+/*Estilos Sección habilidades*/
+.habilidades {
     background-color: #fff;
 }
-.habilidades{
+
+.habilidades {
     background-color: #fff;
-    color:#051129;
+    color: #051129;
     padding: 50px 20px;
 }
-.habilidades .container-habilidades{
+
+.habilidades .container-habilidades {
     max-width: 1100px;
     margin: auto;
 }
-.habilidades h2{
+
+.habilidades h2 {
     color: #0ef;
     font-size: 48px;
     text-align: left;
     padding: 20px 0;
 
 }
-.habilidades .fila{
+
+.habilidades .fila {
     display: flex;
 }
-.skills .fila .col{
+
+.skills .fila .col {
     width: 50%;
     padding: 0 20px;
 }
-.skills .fila .col h3{
+
+.skills .fila .col h3 {
     font-size: 28px;
     margin-bottom: 25px;
 }
-.habilidades .skill > span{
+
+.habilidades .skill>span {
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
 }
-.habilidades .skill .barra-skill{
+
+.habilidades .skill .barra-skill {
     height: 8px;
     width: 80%;
     background-color: #131517;
     position: relative;
     margin-bottom: 30px;
 }
-.habilidades .skill .progreso{
-    background-color:#0ef;
+
+.habilidades .skill .progreso {
+    background-color: #0ef;
     position: absolute;
     top: 0;
     left: 0;
     height: 8px;
 }
-.habilidades .skill .barra-skill span{
+
+.habilidades .skill .barra-skill span {
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color:#0ef;
+    background-color: #0ef;
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
@@ -183,119 +227,192 @@
     right: -15px;
     font-size: 14px;
 }
+
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.habilidades .skill .javascript{
+.habilidades .skill .javascript {
     width: 0%;
     animation: 2s javascript forwards;
 }
+
 @keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 40%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
 }
 
-.habilidades .skill .htmlcss{
+.habilidades .skill .htmlcss {
     width: 0%;
     animation: 2s htmlcss forwards;
 }
+
 @keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 70%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
 }
 
-.habilidades .skill .python{
+.habilidades .skill .python {
     width: 0%;
     animation: 2s python forwards;
 }
+
 @keyframes python {
-    0%{width: 0%;}
-    100%{width: 50%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
 }
 
-.habilidades .skill .sql{
+.habilidades .skill .sql {
     width: 0%;
     animation: 2s sql forwards;
 }
+
 @keyframes sql {
-    0%{width: 0%;}
-    100%{width: 70%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
 }
 
-.habilidades .skill .powerbi{
+.habilidades .skill .powerbi {
     width: 0%;
     animation: 2s powerbi forwards;
 }
+
 @keyframes powerbi {
-    0%{width: 0%;}
-    100%{width: 70%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
 }
 
-.habilidades .skill .laravel{
+.habilidades .skill .laravel {
     width: 0%;
     animation: 2s laravel forwards;
 }
+
 @keyframes laravel {
-    0%{width: 0%;}
-    100%{width: 40%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
 }
 
-.habilidades .skill .comunicacion{
+.habilidades .skill .comunicacion {
     width: 0%;
     animation: 2s comunicacion forwards;
 }
+
 @keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 60%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
 }
 
-.habilidades .skill .trabajo{
+.habilidades .skill .trabajo {
     width: 0%;
     animation: 2s trabajo forwards;
 }
+
 @keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 70%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
 }
 
-.habilidades .skill .creatividad{
+.habilidades .skill .creatividad {
     width: 0%;
     animation: 2s creatividad forwards;
 }
+
 @keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 60%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
 }
 
-.habilidades .skill .dedicacion{
+.habilidades .skill .dedicacion {
     width: 0%;
     animation: 2s dedicacion forwards;
 }
+
 @keyframes dedicacion {
-    0%{width: 0%;}
-    100%{width: 80%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
 }
 
-.habilidades .skill .proyect{
+.habilidades .skill .proyect {
     width: 0%;
     animation: 2s proyect forwards;
 }
+
 @keyframes proyect {
-    0%{width: 0%;}
-    100%{width: 80%;}
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
 }
-.proyectos{
+
+/*Estilos Sección proyectos*/
+.proyectos {
     background-color: #051129;
     padding: 4%;
 }
-.proyectos h1{
+
+.proyectos h1 {
     color: #0ef;
     text-align: center;
     padding-bottom: 3%;
     font-size: 60px;
 }
-.card-img-top{
+
+.card-img-top {
     height: 250px;
 }
-.contacto{
+
+/*Estilos Sección contacto*/
+.contacto {
     background-color: #fff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -305,51 +422,59 @@
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.contacto-texto{
+
+.contacto-texto {
     position: relative;
     padding-left: 8%;
 }
-.contacto-texto h2{
+
+.contacto-texto h2 {
     color: #0ef;
     font-size: 60px;
     text-align: center;
 }
-.contacto-texto h4{
+
+.contacto-texto h4 {
     font-size: 29px;
     font-weight: 600;
-    color:#051129;
+    color: #051129;
     line-height: 1.7;
     margin: 15px 0 30px;
 }
-.contacto-texto p{
-    color:#051129;
+
+.contacto-texto p {
+    color: #051129;
     font-size: 20px;
     line-height: 1.4;
     padding-right: 10%;
     padding-bottom: 10%;
     margin-bottom: 4rem;
 }
-.contacto-form form{
+
+.contacto-form form {
     position: relative;
 }
+
 .contacto-form form input,
-form textarea{
+form textarea {
     border: none;
     outline: none;
     width: 90%;
     padding: 18px;
-    background:#081b29;
+    background: #081b29;
     color: white;
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
 }
-.contacto-form textarea{
+
+.contacto-form textarea {
     resize: none;
     height: 220px;
 }
-.contacto-form form .send{
+
+.contacto-form form .send {
     display: inline-block;
     padding: 14px 60px;
     background: #0ef;
@@ -359,17 +484,20 @@ form textarea{
     letter-spacing: 1px;
     font-weight: 600;
     margin-top: 30px;
-    animation: slideTop 1s ease forwards ;
+    animation: slideTop 1s ease forwards;
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef;
+        0 0 25px #0ef;
 }
+
 .contacto-form form .send:hover {
     box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 200px cyan;
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan;
 }
-.footer p{
+
+/*Estilos Sección footer*/
+.footer p {
     text-align: center;
     background-color: #051129;
     color: #fff;
