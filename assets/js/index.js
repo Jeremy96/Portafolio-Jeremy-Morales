@@ -1,8 +1,8 @@
 //Funcion que aplica las animaciones de las habilidades
-function efectoHabilidades(){
+function efectoHabilidades() {
     var skills = document.getElementById("habilidades");
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distancia_skills >= 300){
+    if (distancia_skills >= 300) {
         let habilidades = document.getElementsByClassName("progreso");
         habilidades[0].classList.add("javascript");
         habilidades[1].classList.add("htmlcss");
@@ -19,6 +19,20 @@ function efectoHabilidades(){
 }
 
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
-window.onscroll = function(){
+window.onscroll = function () {
     efectoHabilidades();
 }
+
+//codigo para agrandar card de la seccion proyectos
+const images = document.querySelectorAll('.card');
+
+images.forEach(image => {
+    image.addEventListener('mouseover', () => {
+        image.style.transform = 'scale(1.2)'; // Agranda la imagen al 120%
+        image.style.transition = 'transform 0.3s ease'; // Suaviza la transición
+    });
+
+    image.addEventListener('mouseout', () => {
+        image.style.transform = 'scale(1)'; // Restaura el tamaño original
+    });
+});
